@@ -1,5 +1,9 @@
 #!groovy
 
+node  {
+    System.out.println("Hello World")
+}
+
 stage 'Dev'
 node ('docker-cloud') {
     checkout scm
